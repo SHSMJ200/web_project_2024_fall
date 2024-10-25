@@ -21,7 +21,7 @@ body {
     color: rgb(50, 80, 16);
     font-size: 100px;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 20vh;
 }
 
 nav {
@@ -46,7 +46,7 @@ nav a:hover {
 
 
 article > section{
-    background-color: rgb(52, 248, 255);
+    background-color: rgba(52, 248, 255, 0.171);
     width: 30%;
     margin: 15px;
     padding: 1px 0px 10px 20px;
@@ -54,7 +54,8 @@ article > section{
 }
 
 article {
-    background-color: rgb(22, 68, 143);
+    font-family: 'Courier New', Monospace;
+    background-color: rgba(22, 68, 143, 0.188);
     width: 100%;
     padding: 20px;
     margin: 10px 4%;
@@ -66,14 +67,32 @@ article {
 }
 
 .submit {
-    margin-top: 10px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 20px;
+    border: transparent;
+    background-color: transparent;
+    color: white;
+}
+
+.submit:hover {
+    border: transparent;
+    color: rgb(133, 166, 183);
 }
 
 .add_button {
-    display: ;
+    font-size: 5vh;
+    font-family: 'Brush Script MT', cursive;
     margin: 10px 4%;
     width: 20%;
     height: 50px;
+    border: transparent;
+    background-color: transparent;
+    color: white;
+}
+
+.add_button:hover {
+    border: transparent;
+    color: rgb(133, 166, 183);
 }
 
 .question ul {
