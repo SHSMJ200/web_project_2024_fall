@@ -1,3 +1,52 @@
-a {
+nav {
+    background-color: white;
+    display: flex;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
     background-color: red;
+    height: 40px;
+    padding: 20px 0px 5px 0px;
+    width: 20%;
+    text-align: center;
+}
+
+article > section{
+    background-color: rgb(52, 248, 255);
+    width: 30%;
+    margin: 15px;
+    padding: 1px 0px 10px 20px;
+    width: 50%;
+}
+
+article {
+    background-color: rgb(22, 68, 143);
+    width: 100%;
+    padding: 20px;
+    margin: 10px 4%;
+    width: 90%;
+}
+
+.chosen_a {
+    background-color: lightpink;
+}
+
+.submit {
+    margin-top: 10px;
+}
+
+.add_button {
+    display: ;
+    margin: 10px 4%;
+    width: 20%;
+    height: 50px;
+}
+
+.question ul {
+    list-style: circle;
+}
+
+button.chosen_answer {
+    color: red;
 }
