@@ -7,10 +7,19 @@
     <title>Scores</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        table {
+        .container {
             width: 50%;
+            margin: 10% 25% 0% 25%;
+            max-height: 200px;
+            overflow: auto;
+        }
+
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            padding: 0;
             border-collapse: collapse;
-            margin: auto;
             white-space: nowrap;
         }
 
@@ -22,9 +31,23 @@
         }
 
         th {
+            position: sticky;
+            top: 0;
             background-color: #4682B4;
             color: white;
         }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #e8f0f7;
+        }
+
+        /* tr.row2 {
+            background-color: #e8f0f7;
+        } */
     </style>
 </head>
 
@@ -35,36 +58,52 @@
         <a href="./scores.html" class="chosen_a">scores page</a>
         <a href="./questions_management2.html">questions management page</a>
     </nav>
-    <table>
-        <tr>
-            <th>name</th>
-            <th>all question</th>
-            <th>answered question</th>
-            <th>Question designer</th>
-            <th>score</th>
-        </tr>
-        <tr>
-            <td>ali</td>
-            <td>20</td>
-            <td>12</td>
-            <td> mamad</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>hosain</td>
-            <td>25</td>
-            <td>10</td>
-            <td> mamad</td>
-            <td>7</td>
-        </tr>
-        <tr>
-            <td>ehsan</td>
-            <td>25</td>
-            <td>10</td>
-            <td>ali</td>
-            <td>75</td>
-        </tr>
-    </table>
+    <div class="container">
+        <table>
+            <tr>
+                <th>name</th>
+                <th>all question</th>
+                <th>answered question</th>
+                <th>Question designer</th>
+                <th>score</th>
+            </tr>
+            <tr>
+                <td>ali</td>
+                <td>20</td>
+                <td>12</td>
+                <td> mamad</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>hosain</td>
+                <td>25</td>
+                <td>10</td>
+                <td> mamad</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>ehsan</td>
+                <td>25</td>
+                <td>10</td>
+                <td>ali</td>
+                <td>75</td>
+            </tr>
+            <tr>
+                <td>danial</td>
+                <td>55</td>
+                <td>10</td>
+                <td>ali</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>reza</td>
+                <td>205</td>
+                <td>100</td>
+                <td>ali</td>
+                <td>75</td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
