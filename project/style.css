@@ -83,3 +83,64 @@ article {
 button.chosen_answer {
     color: red;
 }
+
+.login_box {
+    background-color: aquamarine;
+    width: 30%;
+    margin-top: 15vh;
+    margin-left: 35%;
+    padding: 15px 0px;
+}
+
+.login_box div{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login_box button {
+    display: block;
+    width: 40%;
+    margin-left: 30%;
+}
+
+.container {
+    width: 50%;
+    margin: 10% 25% 0% 25%;
+    max-height: 200px;
+    overflow: auto;
+}
+
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 0;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 9px 15px 9px 5px;
+    text-align: left;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #4682B4;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #e8f0f7;
+}
+
+/* tr.row2 {
+    background-color: #e8f0f7;
+} */
