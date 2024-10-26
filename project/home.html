@@ -19,29 +19,20 @@
     </nav>  
     <h1 id="homeh1">Welcome!</h1>
 </body>
-
-<script type="text/javascript">
-    const colorButton = document.getElementById('colorButton');
+<script src = "my_script.js"></script>
+<script>
+    const colorButton2 = document.getElementById('colorButton');
     const welcomeText = document.getElementById('homeh1');
-    const body = document.body;
-    const navbar = document.querySelector('nav');
-    const navbarlink = document.querySelector('nav a');
-    var counter = 0;
-    colorButton.addEventListener('click', () => {
-        if (counter == 0) {
-            body.style.backgroundColor = 'rgb(13, 46, 53)';
-            colorButton.textContent = 'Night Time';
+    var counter2 = 0;
+    colorButton2.addEventListener('click', () => {
+        if (counter2 == 0) {
             welcomeText.style.color = 'rgb(213, 246, 253)'
-            counter = 1;
+            counter2 = 1;
         }
         else {
-            body.style.backgroundColor = 'rgb(181, 227, 227)';
-            colorButton.textContent = 'Day Time';
             welcomeText.style.color = 'rgb(50, 80, 16)'
-            counter = 0;
+            counter2 = 0;
         }
-        
-});
+    });
 </script>
-
 </html>

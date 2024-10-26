@@ -18,36 +18,33 @@
     </nav>
     <section class="login_box">
         <div>
-            <label for="username" style="font-family: 'Courier New', Courier, monospace;">Username</label>
+            <label class="login_label" for="username">Username</label>
             <input type="text" name="username" value="" placeholder="username">
         </div>
         <div>
-            <label for="password" style="font-family: 'Courier New', Courier, monospace;">Password</label>
+            <label class="login_label" for="password">Password</label>
             <input type="text" name="password" value="" placeholder="password">
         </div>
         <button class="add_button">Sign In</button>
         <button class="add_button">Sign Up</button>
     </section>
 </body>
-
-<script type="text/javascript">
-    const colorButton = document.getElementById('colorButton');
-    const body = document.body;
-    const navbar = document.querySelector('nav');
-    const navbarlink = document.querySelector('nav a');
-    var counter = 0;
-    colorButton.addEventListener('click', () => {
-        if (counter == 0) {
-            body.style.backgroundColor = 'rgb(13, 46, 53)';
-            colorButton.textContent = 'Night Time';
-            counter = 1;
+<script src = "my_script.js"></script>
+<script>
+    const colorButton2 = document.getElementById('colorButton');
+    const labels = document.querySelectorAll('.login_label');
+    var counter2 = 0;
+    colorButton2.addEventListener('click', () => {
+        if (counter2 == 0) {
+            labels[0].style.color = 'rgb(213, 246, 253)'
+            labels[1].style.color = 'rgb(213, 246, 253)'
+            counter2 = 1;
         }
         else {
-            body.style.backgroundColor = 'rgb(181, 227, 227)';
-            colorButton.textContent = 'Day Time';
-            counter = 0;
+            labels[0].style.color = 'rgb(50, 80, 16)'
+            labels[1].style.color = 'rgb(50, 80, 16)'
+            counter2 = 0;
         }
-        
-});
+    });
 </script>
 </html>
